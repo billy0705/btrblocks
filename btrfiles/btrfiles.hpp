@@ -45,7 +45,7 @@ namespace btrblocks::files {
 Relation readDirectory(const YAML::Node& schema, const string& columns_dir, const string& only_type = "");
 /// Given a YAML schema, parse the given csv file and write uncompressed (!)
 /// binary files to the given output directory.
-void convertCSV(const string csv_path, const YAML::Node &schema, const string &out_dir, const string &csv_separator = "|");
+void convertCSV(const string csv_path, const YAML::Node &schema, const string &out_dir, const string &csv_separator = "|", bool has_header = false);
 // ------------------------------------------------------------------------------
 } // namespace btrblocks::files
 // ------------------------------------------------------------------------------

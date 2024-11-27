@@ -18,7 +18,7 @@ struct ColumnDescriptor {
   u32 empty_count = 0;  // 0 by double and integers, '' by strings
 };
 // -------------------------------------------------------------------------------------
-void convertCSV(const string csv_path, const YAML::Node &schema, const string &out_dir, const string &csv_separator)
+void convertCSV(const string csv_path, const YAML::Node &schema, const string &out_dir, const string &csv_separator, bool has_header)
 {
    vector<ColumnDescriptor> columns;
 
@@ -75,6 +75,10 @@ void convertCSV(const string csv_path, const YAML::Node &schema, const string &o
 //           cerr << "will ignore this line" << endl;
 //           continue;
 //         }
+         if ( has_header ) {
+            has_header = false;
+            continue;
+         }
          tuple_i++;
          u32 col_i = 0;
          string column_debug_str; // for debugging
