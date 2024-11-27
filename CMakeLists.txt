@@ -60,13 +60,13 @@ include("${CMAKE_VENDOR_DIR}/yaml-cpp.cmake")
 include("${CMAKE_VENDOR_DIR}/csv-parser.cmake")
 
 # Test dependencies
-include("${CMAKE_VENDOR_DIR}/googletest.cmake")
+# include("${CMAKE_VENDOR_DIR}/googletest.cmake")
 
 # Benchmark dependencies
-include("${CMAKE_VENDOR_DIR}/aws-sdk.cmake")
-include("${CMAKE_VENDOR_DIR}/benchmark.cmake")
-include("${CMAKE_VENDOR_DIR}/gdouble.cmake")
-include("${CMAKE_VENDOR_DIR}/lz4.cmake")
+# include("${CMAKE_VENDOR_DIR}/aws-sdk.cmake")
+# include("${CMAKE_VENDOR_DIR}/benchmark.cmake")
+# include("${CMAKE_VENDOR_DIR}/gdouble.cmake")
+# include("${CMAKE_VENDOR_DIR}/lz4.cmake")
 
 # ---------------------------------------------------------------------------
 # Components
@@ -74,8 +74,8 @@ include("${CMAKE_VENDOR_DIR}/lz4.cmake")
 
 include("${CMAKE_SOURCE_DIR}/btrblocks/local.cmake")  # btrblocks library
 include("${CMAKE_SOURCE_DIR}/btrfiles/local.cmake")   # btrblocks files library
-include("${CMAKE_SOURCE_DIR}/test/local.cmake")       # btrblocks tests
-include("${CMAKE_SOURCE_DIR}/bench/local.cmake")      # btrblocks tests
+# include("${CMAKE_SOURCE_DIR}/test/local.cmake")       # btrblocks tests
+# include("${CMAKE_SOURCE_DIR}/bench/local.cmake")      # btrblocks tests
 include("${CMAKE_SOURCE_DIR}/tools/local.cmake")      # btrblocks tooling
 
 # ---------------------------------------------------------------------------
